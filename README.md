@@ -20,18 +20,20 @@ A modern, professional portfolio website showcasing UX design expertise with an 
 - **UI Components**: Shadcn/ui, Radix UI
 
 ## Project Structure
-├── client/ # React frontend application
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Application pages
-│ │ └── lib/ # Utilities and configurations
-├── server/ # Express.js backend
-│ ├── routes.ts # API route definitions
-│ ├── storage.ts # Database operations
-│ └── services/ # External service integrations
-├── shared/ # Shared types and schemas
-└── attached_assets/ # Static assets and media
 
+```
+├── client/              # React frontend application
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Application pages
+│   │   └── lib/         # Utilities and configurations
+├── server/              # Express.js backend
+│   ├── routes.ts        # API route definitions
+│   ├── storage.ts       # Database operations
+│   └── services/        # External service integrations
+├── shared/              # Shared types and schemas
+└── attached_assets/     # Static assets and media
+```
 
 ## Deployment
 
