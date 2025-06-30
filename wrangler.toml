@@ -1,16 +1,7 @@
-name = "kirsi-rohbock-portfolio"
-compatibility_date = "2024-06-30"
-
-[build]
-command = "npm run build"
-cwd = "."
-
-[[pages_build_output_dir]]
-output_dir = "dist/public"
-
-[env.production.vars]
-NODE_ENV = "production"
-
-[env.production.secrets]
-DATABASE_URL = "your-database-url"
-OPENAI_API_KEY = "your-openai-api-key"
+# This file is not needed for Cloudflare Pages deployment
+# Pages configuration is handled through the Cloudflare dashboard
+# Build settings:
+# - Framework: None
+# - Build command: npm run build  
+# - Output directory: dist/public
+# - Environment variables: DATABASE_URL, OPENAI_API_KEY
