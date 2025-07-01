@@ -1,7 +1,0 @@
-# This file is not needed for Cloudflare Pages deployment
-# Pages configuration is handled through the Cloudflare dashboard
-# Build settings:
-# - Framework: None
-# - Build command: npm run build  
-# - Output directory: dist/public
-# - Environment variables: DATABASE_URL, OPENAI_API_KEY
