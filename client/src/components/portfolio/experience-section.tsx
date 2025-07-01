@@ -64,7 +64,7 @@ export default function ExperienceSection() {
                   <div className="flex-1 pr-8">
                     <Card 
                       className="bg-white shadow-lg border border-gray-200 bg-cover bg-center bg-no-repeat"
-                      style={{ backgroundImage: `url(${backgroundImage})` }}
+                      style={{ backgroundColor: '#f8f9fa' }}
                     >
                       <CardContent className="p-6">
                         <div className="space-y-3">
