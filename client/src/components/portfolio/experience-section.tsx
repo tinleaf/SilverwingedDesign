@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import type { Experience, Project } from "@shared/schema";
-import backgroundImage from "@assets/Background-wht_1751295905079.png";
+// Using public folder for reliable asset loading in production
 
 // Map case studies to experience periods based on years
 const getCaseStudiesForExperience = (experiencePeriod: string, company: string, projects: Project[]): Project[] => {
@@ -91,7 +91,7 @@ export default function ExperienceSection() {
                         <div className="flex-1 pr-8 text-right">
                           <Card 
                             className="bg-white shadow-lg border border-gray-200 bg-cover bg-center bg-no-repeat"
-                            style={{ backgroundImage: `url(${backgroundImage})` }}
+                            style={{ backgroundImage: "url(/images/Background-wht_1751295905079.png)" }}
                           >
                             <CardContent className="p-6">
                               <div className="text-sm text-gray-500 mb-1">{experience.period}</div>
@@ -133,7 +133,7 @@ export default function ExperienceSection() {
                         <div className="flex-1 pl-8">
                           <Card 
                             className="bg-white shadow-lg border border-gray-200 bg-cover bg-center bg-no-repeat"
-                            style={{ backgroundImage: `url(${backgroundImage})` }}
+                            style={{ backgroundImage: "url(/images/Background-wht_1751295905079.png)" }}
                           >
                             <CardContent className="p-6">
                               <div className="text-sm text-gray-500 mb-1">{experience.period}</div>

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Progress } from "@/components/ui/progress";
 import type { Skill } from "@shared/schema";
-import profileImage from "@assets/profile_1751296289128.jpg";
+// Using public folder for reliable asset loading in production
 
 export default function AboutSection() {
   const { data: skills, isLoading } = useQuery<Skill[]>({
@@ -22,7 +22,7 @@ export default function AboutSection() {
           {/* Profile image - centered and above header on mobile */}
           <div className="md:hidden mb-8">
             <img 
-              src={profileImage}
+              src="/images/profile_1751296289128.jpg"
               alt="Kirsi Rohbock - UX Designer" 
               className="rounded-xl shadow-lg w-48 h-48 object-cover grayscale mx-auto" 
             />
@@ -42,7 +42,7 @@ export default function AboutSection() {
             {/* Profile image - side by side on desktop */}
             <div className="hidden md:block flex-shrink-0">
               <img 
-                src={profileImage}
+                src="/images/profile_1751296289128.jpg"
                 alt="Kirsi Rohbock - UX Designer" 
                 className="rounded-xl shadow-lg w-48 h-48 object-cover grayscale" 
               />

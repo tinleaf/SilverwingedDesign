@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import type { Project } from "@shared/schema";
-import backgroundImage from "@assets/Background-gry_1751295870038.png";
+// Using public folder for reliable asset loading in production
 
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -30,7 +30,7 @@ export default function PortfolioSection() {
     <section 
       id="portfolio" 
       className="py-20 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundColor: 'hsl(var(--custom-grey))', backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundColor: 'hsl(var(--custom-grey))', backgroundImage: 'url(/images/Background-gry_1751295870038.png)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

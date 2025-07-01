@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Github } from "lucide-react";
-import backgroundImage from "@assets/Background_1751294827149.png";
+// Using public folder for reliable asset loading in production
 
 export default function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -11,7 +11,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-16 pb-20 bg-black relative" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
+    <section id="home" className="pt-16 pb-20 bg-black relative" style={{ backgroundImage: 'url(/images/Background_1751294827149.png)', backgroundSize: 'cover', backgroundPosition: 'right', backgroundRepeat: 'no-repeat' }}>
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex justify-center items-center min-h-screen">
